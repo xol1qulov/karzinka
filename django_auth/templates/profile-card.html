@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head itemscope itemtype="http://schema.org/WebSite">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title itemprop="name">Preview bootstrap html snippet. bs4 profile header card</title>
+    <meta name="description" itemprop="description"
+          content="Preview bootstrap html snippet. bs4 profile header card. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="keywords"
+          content="html, css, javascript, themes, templates, code snippets, ui examples, react js, react-native, plagraounds, cards, front-end, profile, invoice, back-end, web-designers, web-developers">
+    <link itemprop="sameAs" href="https://www.facebook.com/bootdey">
+    <link itemprop="sameAs" href="https://twitter.com/bootdey">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/bootdey_favicon.ico">
+    <link rel="apple-touch-icon" sizes="135x140" href="/img/bootdey_135x140.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/bootdey_76x76.png">
+    <link rel="canonical" href="https://bootdey.com/snippets/view/bs4-profile-header-card" itemprop="url">
+    <meta property="twitter:account_id" content="2433978487"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bootdey">
+    <meta name="twitter:creator" content="@bootdey">
+    <meta name="twitter:title" content="Preview bootstrap html snippet. bs4 profile header card">
+    <meta name="twitter:description"
+          content="Preview bootstrap html snippet. bs4 profile header card. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="twitter:image" content="https://bootdey.com/files/SnippetsImages/bootstrap-snippets-820.png">
+    <meta name="twitter:url" content="https://bootdey.com/snippets/preview/bs4-profile-header-card">
+    <meta property="og:title" content="Preview bootstrap html snippet. bs4 profile header card">
+    <meta property="og:url" content="https://bootdey.com/snippets/preview/bs4-profile-header-card">
+    <meta property="og:image" content="https://bootdey.com/files/SnippetsImages/bootstrap-snippets-820.png">
+    <meta property="og:description"
+          content="Preview bootstrap html snippet. bs4 profile header card. Copy and paste the html, css and js code for save time, build your app faster and responsive">
+    <meta name="msvalidate.01" content="23285BE3183727A550D31CAE95A790AB"/>
+    <script src="/cache-js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="snippetContent">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container profile-page">
+        <div class="row">
+            {% for user in users %}
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"><img
+                                            src="{{ user.avatar_url }}" alt></div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12"><h4 class="m-t-0 m-b-0">
+                                    <strong>{{ user.get_full_name }}</strong>
+                                </h4> <span class="job_post"></span>
+                                    <p>{{ user.state }}, {{ user.city }}, {{ user.street }}</p>
+                                    <div>
+                                        <button class="btn btn-primary btn-round">Follow</button>
+                                        <button class="btn btn-primary btn-round btn-simple">Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    <style type="text/css">body {
+        margin-top: 20px;
+        background: #eee;
+    }
+
+    a {
+        color: #f96332;
+    }
+
+    .m-t-5 {
+        margin-top: 5px;
+    }
+
+    .card {
+        background: #fff;
+        margin-bottom: 30px;
+        transition: .5s;
+        border: 0;
+        border-radius: .1875rem;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .card .body {
+        font-size: 14px;
+        color: #424242;
+        padding: 20px;
+        font-weight: 400;
+    }
+
+    .profile-page .profile-header {
+        position: relative
+    }
+
+    .profile-page .profile-header .profile-image img {
+        border-radius: 50%;
+        width: 140px;
+        border: 3px solid #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+    }
+
+    .profile-page .profile-header .social-icon a {
+        margin: 0 5px
+    }
+
+    .profile-page .profile-sub-header {
+        min-height: 60px;
+        width: 100%
+    }
+
+    .profile-page .profile-sub-header ul.box-list {
+        display: inline-table;
+        table-layout: fixed;
+        width: 100%;
+        background: #eee
+    }
+
+    .profile-page .profile-sub-header ul.box-list li {
+        border-right: 1px solid #e0e0e0;
+        display: table-cell;
+        list-style: none
+    }
+
+    .profile-page .profile-sub-header ul.box-list li:last-child {
+        border-right: none
+    }
+
+    .profile-page .profile-sub-header ul.box-list li a {
+        display: block;
+        padding: 15px 0;
+        color: #424242
+    }</style>
+    <script type="text/javascript"></script>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1RTS0P1CD"></script>
+<script>window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-F1RTS0P1CD');</script>
+</body>
+</html>
